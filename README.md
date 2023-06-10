@@ -28,7 +28,7 @@ get the VM ready to do the work you need to, this is what we're doing here, init
 ________
 What I need to work out: What are the best labels for the agents?
     For example: operating system, software on it (e.g., Python)
-    An example is setting up the sizes as xxs, m/l
+    An example is setting up the 'sizes'
     Think of other labels I can make for the agents to make things easier
 If everything uses Python, for example, you can install it with a step, or if all of the builds need Python, it might be better to have Python installed on the VM. And then the agent would say it has Python, along with the other attributes it has
 
