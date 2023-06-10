@@ -1,6 +1,6 @@
 name: CI pipeline
 
-pn: [push]
+on: [push]
 
 jobs:
   build:
