@@ -34,3 +34,11 @@ If everything uses Python, for example, you can install it with a step, or if al
 
 - agents have 'attributes' like things that they have (xxs, m/l)
 
+____
+Continuous integration:
+make code changes, test it locally, and the system does the rest
+when they make code changes, it builds tests and deploys (that is continuous integration)
+
+-
+one way to work is feature branches (git flow model): pulls master, makes a new branch, makes changes, tests it, then merges it to master
+another way is trunk-based development: where people push directly to master
