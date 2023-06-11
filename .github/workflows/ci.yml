@@ -1,12 +1,11 @@
-name: CI pipeline
+name: CI pipeline # The name of your workflow
 
-on: [push]
+on: [push] # To automatically trigger a workflow, use on to define which events can cause the workflow to run
+# A workflow with the above 'on' value will run when a push is made to any branch in the workflow's repository
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
       - name: Build

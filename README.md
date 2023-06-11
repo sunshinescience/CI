@@ -1,11 +1,9 @@
 # CI
 
-docs on making continuous integration with GitHub, found here:
-https://docs.github.com/en/actions/quickstart
+### Quick start
+See [here](https://docs.github.com/en/actions/quickstart) for creating your first workflow and how to view the workflow results.
 
-
-search for github actions python
-
+### GitHub actions vs Bamboo:
 'steps' here (in the ci.yml file) are called 'tasks' in Bamboo
 A 'job' here is a 'stage' in Bamboo
 
@@ -15,17 +13,16 @@ ubuntu is the operating system here in the GitHub actions example
 
 resources with regard to an agent are hardware, e.g., CPU or memory
 
-TODO:
-Add other steps tomorrow
-A step that creates a file with touch, that runs the step command
+### To do
+Add a step that creates a file with touch, that runs the step command
 And make another step that runs the ls command
+Another task can be to setup python on this machine
 
-Another task can be setup python on this machine
+Read through github actions documentation.
+Get the VM ready to do the work that's needed.
+Here, these are the initialization steps.
 
-read through github actions documentation
-get the VM ready to do the work you need to, this is what we're doing here, initialization steps
-
-________
+### Notes 
 What I need to work out: What are the best labels for the agents?
     For example: operating system, software on it (e.g., Python)
     An example is setting up the 'sizes'
@@ -34,11 +31,17 @@ If everything uses Python, for example, you can install it with a step, or if al
 
 - agents have 'attributes' like things that they have (xxs, m/l)
 
-____
+### CI
 Continuous integration:
-make code changes, test it locally, and the system does the rest
-when they make code changes, it builds tests and deploys (that is continuous integration)
+Make code changes, test it locally, and the system does the rest. When someone makes code changes, it builds, tests, and deploys (that is continuous integration).
 
--
-one way to work is feature branches (git flow model): pulls master, makes a new branch, makes changes, tests it, then merges it to master
-another way is trunk-based development: where people push directly to master
+#### Ways of development
+1. One way to work is feature branches (git flow model): pulls master, makes a new branch, makes changes, tests it, then merges it to master
+2. Another way is trunk-based development: where people push directly to master
+
+
+### Notes
+Documentation on making continuous integration with GitHub, found here:
+https://docs.github.com/en/actions/quickstart
+
+Do a google search for 'github actions python'
